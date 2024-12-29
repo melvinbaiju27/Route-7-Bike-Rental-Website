@@ -1,0 +1,633 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for the navbar */
+}
+
+.navbar-container {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+    font-size: 24px; /* Logo font size */
+    font-family: Inria Serif, serif; /* Logo font family */
+    padding-left: 40px;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Logo color */
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Font size for the toggle */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Navbar Menu Styles */
+.navbar-menu {
+    padding-right: 50px;
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.navbar-item {
+    margin: 0 15px; /* Spacing between items */
+}
+
+.navbar-item a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link color */
+    padding: 8px 12px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navbar-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Position below navbar */
+        left: 0; /* Align to the left */
+        background-color: #333; /* Background color */
+        width: 100%; /* Full width */
+        z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+}/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for the navbar */
+}
+
+.navbar-container {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+    font-size: 24px; /* Logo font size */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Logo color */
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Font size for the toggle */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Navbar Menu Styles */
+.navbar-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.navbar-item {
+    margin: 0 15px; /* Spacing between items */
+}
+
+.navbar-item a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link color */
+    padding: 8px 12px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navbar-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Position below navbar */
+        left: 0; /* Align to the left */
+        background-color: #333; /* Background color */
+        width: 100%; /* Full width */
+        z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fallback font */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fallback font */
+}
+/* Main Container */
+.main-container {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding around the container */
+    max-width: 1800px; /* Max width for the container */
+    margin: auto; /* Center the container */
+}
+
+/* Image Container */
+.image-container {
+    flex: 1; /* Allow the image container to grow */
+    padding-right: 20px; /* Space between image and text */
+}
+
+.main-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image takes full width of its container */
+}
+
+/* Text Container */
+.text-container {
+    flex: 1; /* Allow the text container to grow equally */
+    color: #333; /* Dark text color */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Heading Styles */
+.heading {
+    font-family: 'Jomolhari', serif; /* Jomolhari font for the heading */
+    font-size: 76px; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark text color */
+}
+
+/* Sub-heading Styles */
+.sub-heading {
+    font-family: 'Jeju Myeongjo', serif; /* Jeju Myeongjo font for the sub-heading */
+    font-size: 24px; /* Font size for the sub-heading */
+    margin-bottom: 20px; /* Space below the sub-heading */
+    color: #1c1515; /* Slightly lighter text color */
+}
+
+/* Form Styles */
+.hero-form {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    max-width: 900px; /* Increased max width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 15px; /* Increased padding inside the form */
+    border: 1px solid #ddd; /* Border around the form */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input Wrapper */
+.input-wrapper {
+    flex: 1; /* Allow input fields to grow */
+    margin: 0 10px; /* Space between input fields */
+}
+
+/* Input Label */
+.input-label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input Field */
+.input-field {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding inside the input for better spacing */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 12px 25px; /* Increased padding for the button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Explore Button Styles */
+.explore-button {
+    display: inline-block; /* Make the link a block element */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Explore Section Styling */
+.explore-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.explore-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark text for good readability */
+  margin-bottom: 20px;
+}
+
+/* Row Styling */
+.bikes-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.bike-info {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Card Styling */
+.bike-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border for definition */
+  border-radius: 8px;
+  overflow: hidden;
+  
+  width: 300px; /* Card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.bike-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Bike Info Styling */
+.bike-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.bike-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.bike-cost {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rent-now-button, .buy-now-button {
+    background-color: #26c2ee; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.rent-now-button:hover, .buy-now-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.buy-now-button {
+    margin-top: auto; /* Push this button to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bike-card {
+    width: 90%; /* Full-width cards on smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .bikes-row {
+    justify-content: space-between; /* Adjust spacing for medium screens */
+  }
+}
+
+/* Rental Container */
+.rental-container {
+    text-align: center; /* Center the heading */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Rental Heading */
+.rental-heading {
+    font-family: 'Jomolhari', serif; /* Font for the heading */
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Full-Screen Image Container */
+.full-screen-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Background Image */
+.background-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+/* About Container */
+.about-container {
+    max-width: 1800px; /* Max width for the about section */
+    margin: 40px auto; /* Center the section */
+    padding: 20px; /* Padding inside the section */
+    border: 1px solid #ddd; /* Border around the section */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+/* About Heading */
+.about-heading {
+    font-family: 'Jomolhari', serif; /* Font for the heading */
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* About Text */
+.about-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Open Sans', sans-serif; /* Font for the text */
+    font-size: 18px; /* Font size for the text */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Space below each paragraph */
+    text-align: justify;
+    color: #333; /* Dark text color */
+}
+
+/* Review Container Styling */
+.review-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-heading {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Reviews Row */
+.reviews-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Review Card Styling */
+.review-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
+  min-width: 250px; /* Ensures a minimum width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-size: 1em;
+  color: #333;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 800px; /* Max width for the contact section */
+    margin: 40px auto; /* Center the section */
+    padding: 20px; /* Padding inside the section */
+    background-color: #e2e2e2; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+/* Contact Heading */
+.contact-heading {
+    font-family: 'Jomolhari', serif; /* Font for the heading */
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Contact Form */
+.contact-form {
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Input Wrapper */
+.input-wrapper {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+/* Input Label */
+.input-label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input Field */
+.input-field {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Textarea */
+textarea.input-field {
+    height: 100px; /* Fixed height for the textarea */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer Container */
+.footer-container {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the footer */
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    max-width: 1200px; /* Max width for the footer content */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1; /* Allow each section to grow equally */
+    margin: 0 20px; /* Space between sections */
+}
+
+/* Footer Heading */
+.footer-heading {
+    font-size: 20px; /* Font size for headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 14px; /* Font size for text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Space between links */
+}
+
+.footer-links a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above the bottom text */
+}
+
+/* Footer Copy */
+.footer-copy {
+    font-size: 12px; /* Font size for copyright text */
+}
