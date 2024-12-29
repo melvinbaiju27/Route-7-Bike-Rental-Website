@@ -10,7 +10,6 @@ The website aims to provide users with an intuitive and seamless experience for 
 - **User-Friendly Interface:** Easy navigation and clear layout to enhance user experience.
 - **Bike Listings:** A comprehensive list of available bikes with detailed descriptions and images.
 - **Search and Filter:** Users can search and filter bikes based on their preferences.
-- **Rental Process:** A streamlined process for bike selection, rental duration, and booking confirmation.
 
 #### Technologies Used
 - **HTML5:** Structuring the content and layout of the website.
@@ -19,3 +18,4 @@ The website aims to provide users with an intuitive and seamless experience for 
 - **Figma:** Creating the initial design and prototype of the website.
 
 ### Website Demo
+![bike-rental](https://github.com/user-attachments/assets/72444e8d-0d1b-42e5-80c2-ea83db34236e)
